@@ -1,7 +1,7 @@
 def main(n):
     prime = [True for i in range(0, n+1)]
     p = 2
-    while(p *p <= n):
+    while p *p <= n:
         if prime[p]:
             for i in range(p * 2, n+1, p):
                 prime[i] = False
